@@ -421,7 +421,7 @@ clear all; close all;  %clear all existing variables; close all existing plots
 % CALCULATE HEAVE AND THROW
     %Heave = the difference between the x vlaues of the points of
     %intersection between the fault plane and the upper/ lower surfaces
-        Heave(i) = abs(P1(1))+abs(P2(1));
+        Heave(i) = abs(P1(1)-P2(1)); 
  
     %Throw = the difference between the y vlaues of the points of
     %intersection between the fault plane and the upper/ lower surfaces
