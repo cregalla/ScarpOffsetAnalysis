@@ -433,10 +433,10 @@ clear all; close all;  %clear all existing variables; close all existing plots
     stdtev_vert_sep = std(VS)
  ave_slip = mean(fault_slip) 
     stdtev_slip = std(fault_slip)
- ave_heave = mean(Heave)
-    stdtev_heave = std(fault_slip)
+ ave_heave = mean(Heave)  
+    stdtev_heave = std(Heave)
  ave_throw = mean(Throw)    
-    stdtev_throw = std(fault_slip) %#ok<*NOPTS>
+    stdtev_throw = std(Throw) 
  
  plotlegend = legend([h], 'Topo Profile', 'Surface Regressions', '95% Regression CI',...
      'Fault Plane', 'Vertical Separation', 'Location', 'Northeast');
